@@ -11,3 +11,7 @@ para criar uma api fake, ajudar no ambiente de desenvolvimento a criar o front-e
 ##### MIRAGEJS
 
 Com o mesmo propósito do **json-server** o mirageJS tem como diferencial um banco de dados integrado onde podemos fazer relacionamento de tabelas, saiba mais [aqui](https://miragejs.com/).
+
+##### REACT-MODAL
+
+Biblioteca para criar de forma simples e customizavel um modal no seu projeto para ver a documentação [clique aqui](https://github.com/reactjs/react-modal)
