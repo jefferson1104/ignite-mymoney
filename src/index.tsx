@@ -29,7 +29,7 @@ createServer({
         },
         {
           id: 3,
-          title: 'Alugel',
+          title: 'Aluguel',
           type: 'withdraw',
           category: 'Casa',
           amount: 1500,
