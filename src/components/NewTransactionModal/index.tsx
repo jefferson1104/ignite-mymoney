@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import Modal from 'react-modal';
 
 import closeImg from '../../assets/close.svg';
@@ -14,7 +14,22 @@ interface NewTransactionModalProps {
 Modal.setAppElement('#root');
 
 export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModalProps) {
+  const [title, setTitle] = useState('');
+  const [value, setValue] = useState(0);
+  const [category, setCategory] = useState('');
   const [transactionType, setTransactionType] = useState('deposit');
+
+  function handleCreateNewTransaction(event: FormEvent) {
+    event.preventDefault();
+
+    console.log({
+      title,
+      value,
+      category,
+      transactionType
+    })
+    
+  }
 
   return (
     <Modal
@@ -27,11 +42,22 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
         <img src={closeImg} alt="fechar modal" />
       </button>
 
-      <Container>
+      <Container onSubmit={handleCreateNewTransaction}>
         <h2>Cadastrar transação</h2>
 
-        <input placeholder="Título" type="text" />
-        <input placeholder="Valor" type="number" />
+        <input 
+          placeholder="Título" 
+          type="text" 
+          value={title} 
+          onChange={event => setTitle(event.target.value)} 
+        />
+
+        <input 
+          placeholder="Valor" 
+          type="number" 
+          value={value} 
+          onChange={event => setValue(Number(event.target.value))}
+        />
 
         <TransactionTypeContainer>
           <RadioBox
@@ -55,7 +81,12 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
           </RadioBox>
         </TransactionTypeContainer>
 
-        <input placeholder="Categoria" type="text" />
+        <input 
+          placeholder="Categoria" 
+          type="text" 
+          value={category} 
+          onChange={event => setCategory(event.target.value)}
+        />
 
         <button type="submit">Cadastrar</button>
       </Container>
