@@ -1,22 +1,18 @@
-<center>
+<div align="center">
 
-## :money_with_wings: MyMoney
+  # :money_with_wings: MyMoney
 
-</center>
+  <p align="center">
+    <img alt="technology" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+    <img alt="technology" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+    <img alt="technology" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
+  </p>
+</div>
 
-<p align="center">
-  <img alt="technology" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+# :barber: About this project
+MyMoney is an app to register cash in and out, built with **React.js** technology using **Typescript**, its styling was done with css using the **Styled-components** library, a fake API was used in the project through the **MirageJS** library and the requests in this API were made with the **Axios** library.
 
-  <img alt="technology" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-
-  <img alt="technology" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
-</p>
-
-## :barber: O projeto
-
-O MyMoney é um app para registro de entrada e saída de dinheiro, construido com a tecnologia **React.js** utilizando **Typescript**, sua estilização foi feito com css utilizando a biblioteca **Styled-components**, uma fake API foi utilizada no projeto através da biblioteca **MirageJS** e as requisições nessa API foi feito com a biblioteca **Axios**.
-
-## :rocket: Principais tecnologias
+# :rocket: Main technologies
 
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [ReactJS](https://pt-br.reactjs.org/)
@@ -25,23 +21,23 @@ O MyMoney é um app para registro de entrada e saída de dinheiro, construido co
 - [MirageJS](https://miragejs.com/)
 - [React-modal](https://github.com/reactjs/react-modal)
 
-## :zap: Como executar este projeto
-
+# :zap: How to run this project
 ```bash
-# Faça clone desse projeto para sua maquina local
+# Clone this project to your local machine
 $ git clone https://github.com/jefferson1104/mymoney-reactjs.git
 
-# Acesse o diretório do projeto e abra com seu editor de código (VSCODE)
+# Go to the project directory and open it with your code editor(VSCODE)
+cd mymoney-reactjs
+code .
 
-# Instale todas as dependencias do projeto
+# Install all project dependencies
 $ yarn
 
-# Iniciar localmente na porta 3000
+# Start locally at port 3000
 $ yarn start
 ```
 
-## 🎨 Screenshots
-
+# 🎨 Screenshots
 <p align="center">
   <a href='./src/assets/screenshots/mymoney-screenshot-01.png'>
     <img width=600 src="./src/assets/screenshots/mymoney-screenshot-01.png">
@@ -56,6 +52,5 @@ $ yarn start
   </a>
 </p>
 
-## Layout do projeto
-
+# Layout this project
 https://www.figma.com/file/0xmu9mj2TJYoIOubBFWsk5/dtmoney-Ignite-(Copy)?node-id=0%3A1
